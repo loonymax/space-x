@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 
 export function Main() {
   const dispatch = useAppDispatch();
-  const launches = useAppSelector((state) => state.launchesReducer.launchesList)
+  const launches = useAppSelector((state) => state.launchesReducer.launchesList);
 
   useEffect(() => {
     dispatch(fetchLaunchesAction());

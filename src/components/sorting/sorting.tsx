@@ -1,9 +1,7 @@
 import { ChangeEvent, MouseEvent, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux"
-import { sorting } from "../../const";
-import { selectSorting } from "../../store/reducer/launches-reducer";
-
-const sortingValues = Object.values(sorting);
+import { sorting, sortingValues } from "../../const";
+import { selectSorting } from "../../store/reducer/launches-slice";
 
 export function Sorting() {
   const dispatch = useAppDispatch();

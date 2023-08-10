@@ -38,7 +38,7 @@ export interface ILaunches {
   auto_update: boolean;
   flight_number: number;
   name: string;
-  date_utc: string;
+  date_utc: Date;
   date_unix: number;
   date_local: string;
   date_precision: string;

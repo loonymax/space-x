@@ -3,14 +3,14 @@ import { ILaunches } from "../../types/i-launches";
 import { fetchLaunchesAction } from "./api-actions";
 import { sorting } from "../../const";
 
-interface UserState {
+export interface State {
   launchesList: ILaunches[];
   isLoading: boolean;
   error: string;
   sorting: string | null;
 }
 
-const initialState: UserState = {
+export const initialState: State = {
   launchesList: [],
   isLoading: false,
   error: '',

@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { launchesAPI } from '../services/launches-api';
-import launchesReducer from './reducer/launches-reducer';
+import launchesReducer from './reducer/launches-slice';
 import { createAPI } from '../services/axios';
 
 const rootReducer = combineReducers({
